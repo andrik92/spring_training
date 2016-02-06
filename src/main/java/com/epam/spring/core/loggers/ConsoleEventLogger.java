@@ -1,6 +1,7 @@
 package com.epam.spring.core.loggers;
 
 import com.epam.spring.core.beans.Event;
+import com.epam.spring.core.loggers.interfaces.EventLogger;
 
 public class ConsoleEventLogger implements EventLogger {
 

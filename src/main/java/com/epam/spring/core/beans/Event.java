@@ -4,8 +4,10 @@ import java.text.DateFormat;
 import java.util.Date;
 
 public class Event {
-
-	int id = (int) (Math.random() + 10);
+	int Max = 10;
+	int Min = 1;
+	
+	int id = (int) (Math.random() * ( Max - Min ));
 	String msg;
 	Date date;
 	DateFormat df;
@@ -26,7 +28,7 @@ public class Event {
 	@Override
 	public String toString() {
 		return "Event [id=" + id + ", msg=" + msg + ", date=" + df.format(date)
-				+ "]";
+				+ "]\n";
 	}
 
 }
